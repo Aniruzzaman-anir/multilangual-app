@@ -1,4 +1,4 @@
-{
+export default {
     "brand":"Soft UI Dashboard",
     "menu":{
         "dashboard":"ড্যাশবোর্ড",
