@@ -61,6 +61,7 @@
                             <select v-model="selected">
                                 <option value="en">EN</option>
                                 <option value="bn">BN</option>
+                                <option value="es">ES</option>
                             </select>
 
                         </div>
@@ -183,6 +184,7 @@ import { ref } from 'vue';
 import en from "../lang/en";
 import bn from "../lang/bn"
 import { computed } from '@vue/reactivity';
+import es from '../lang/es';
 
 
 let selected = ref("en");
@@ -192,6 +194,8 @@ const lang = computed(()=>{
             return en;
         case "bn":
             return bn
+        case "es":
+            return es
     }
 
 })
